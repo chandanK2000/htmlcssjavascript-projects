@@ -5,44 +5,325 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  </head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- aos library for the animating -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
   <body>
     <header>
-        <nav>
-            <div class="logo">
-                Photo<span>pi</span>X
-            </div>
-            <div class="menu">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="">Contacts</a>
-            
-            </div>
-            <div class="icon">
-                <i class="fa fa-search"></i>
-                <a href="">Login</a>
-            </div>
-        </nav>
+      <nav id="home">
+        <div class="logo">Photo<span>pi</span>X</div>
+        <div class="menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contacts</a>
+        </div>
+        <div class="icon">
+          <i class="fa fa-search"></i>
+          <a href="">Login</a>
+        </div>
+      </nav>
 
-        <section class="h-text">
-            <i class="fa fa-camera" id="camera"></i>
-            <h1>Capturing the moments that Captivate your  &hearts; Heart</h1>
-            <input type="search" placeholder="Search Here....">
-            <button><i class="fa fa-search"></i></button>
-        </section>
+      <section class="h-text">
+        <i class="fa fa-camera" id="camera"></i>
+        <h1 data-aos="fade-up">
+          Capturing the moments that Captivate your &hearts; Heart
+        </h1>
+        <input type="search" placeholder="Search Here...." />
+        <button><i class="fa fa-search"></i></button>
+      </section>
     </header>
-   <section class="filter-gallery">
-    <div class="filter-menu">
+    <section class="filter-gallery" id="gallery">
+      <div class="portpolio-menu">
         <ul>
-            <li class="active" data-filter="*">All</li>
-            <li data-filter="nature">Nature</li>
-            <li data-filter="fashion">Fashion</li>
-            <li data-filter="wedding">Wedding</li>
-
-
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".nature">Nature</li>
+          <li data-filter=".fashion">Fashion</li>
+          <li data-filter=".wedding">Wedding</li>
         </ul>
-    </div>
-   </section>
+      </div>
+
+      <div class="portpolio-item">
+        <div
+          class="item nature"
+          data-aos="flip-left"
+          data-aos-offset="100"
+          data-aos-delay="100"
+        >
+          <img
+            src="images/p1.jpeg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item fashion"
+        
+        >
+          <img
+            src="images/p2.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item wedding"
+        
+        >
+          <img
+            src="images/p3.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item nature"
+         
+        >
+          <img
+            src="images/p4.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item fashion"
+         
+        >
+          <img
+            src="images/p5.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item wedding"
+       
+        >
+          <img
+            src="images/p6.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item nature"
+          
+        >
+          <img
+            src="images/p7.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item fashion"
+         
+        >
+          <img
+            src="images/p8.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div
+          class="item wedding"
+         
+        >
+          <img
+            src="images/p9.jpg"
+            alt="images not found"
+            height="100px"
+            width="100px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="member">
+      <div
+        class="member-info"
+        data-aos="zoom-in-up"
+        data-aos-offset="100"
+        data-aos-delay="100"
+      >
+        <h1>Our <span> Information</span></h1>
+        <p>what our member says</p>
+      </div>
+      <div
+        class="member-card"
+        data-aos="zoom-in-down"
+        data-aos-offset="100"
+        data-aos-delay="200"
+      >
+        <img src="images/chandan.jfif" alt="image not found" />
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic.
+        </p>
+        <h2>*Chandan kumar</h2>
+        <img src="images/facebook.jpg" alt="" height="60" width="60" />
+        <img src="images/twitter.png" alt="" height="60" width="60" />
+        <img src="images/whatsapp.jpg" alt="" height="60" width="60" />
+        <img src="images/linked2.png" alt="" height="60" width="60" />
+      </div>
+
+      <div
+        class="member-images"
+        data-aos="zoom-in"
+        data-aos-offset="100"
+        data-aos-delay="300"
+      >
+        <img src="images/girl1.jpeg" alt="" />
+        <img src="images/boy3.jpg" alt="" />
+        <img src="images/girl2.jpg" alt="" />
+        <img src="images/boy2.jpg" alt="" />
+        <img src="images/p8.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="newsletter">
+        <div data-aos="fade-up" data-aos-offset="200">
+          <h2>Subscribe our newsletter</h2>
+          <p>we'r a team of non-cynic who truely care for our work</p>
+        </div>
+        <div
+          class="ntext"
+          data-aos="fade-up-right"
+          data-aos-offset="100"
+          data-aos-delay="200"
+        >
+          <label for="">
+            <input type="text" name="" id="" placeholder="Enter your email.." />
+            <button>Subscribe</button>
+          </label>
+        </div>
+      </div>
+
+      <div
+        class="f-contact"
+        data-aos="zoom-in-up"
+        data-aos-offset="100"
+        data-aos-delay="200"
+      >
+        <div>
+          <h1>Information</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been
+          </p>
+          <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-whatsapp"></i>
+          </div>
+        </div>
+        <div>
+          <h1>Useful Links</h1>
+          <p>About us</p>
+          <p>Gpllery</p>
+          <p>Blog Posts</p>
+          <p>Pricing Plans</p>
+        </div>
+        <div>
+          <h1>Details</h1>
+          <p>Photographers</p>
+          <p>Gallery</p>
+          <p>About</p>
+          <p>Pricing plans</p>
+        </div>
+        <div>
+          <h1>Help & Supports</h1>
+          <p>Privacy policy</p>
+          <p>Terms & Conditions</p>
+          <p>Technical Supports</p>
+          <p>Customer Care</p>
+        </div>
+      </div>
+    </footer>
+<section>
+    <div class="scroll-up">
+        <button onclick="topFunction()" id="myBtn">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+      </div>
+</section>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- isotope jquery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- aos library for animating -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      $(".portpolio-item").isotope({
+        // options
+        itemSelector: ".item",
+        layoutMode: "fitRows",
+      });
+      $(".portpolio-menu ul li").click(function () {
+        $(".portpolio-menu ul li").removeClass("active");
+        $(this).addClass("active");
+        var selector = $(this).attr("data-filter");
+        $(".portpolio-item").isotope({
+          filter: selector,
+        });
+        return false;
+      });
+
+      AOS.init();
+
+      //for the up button
+
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      script;
+    </script>
   </body>
 </html>
